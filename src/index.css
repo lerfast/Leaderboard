@@ -1,0 +1,102 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.header-container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.web-title {
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: -217px;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.board-container {
+  flex: 1.5;
+  border: 3px solid black;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.board-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 5px 15px;
+  font-weight: 600;
+  transition: all 0.2s;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #efefef;
+}
+
+.scores {
+  width: 100%;
+}
+
+.scores-row {
+  padding: 5px 0;
+  border-bottom: 1px solid black;
+}
+
+.row-description {
+  font-weight: 600;
+  margin: 0;
+}
+
+.odd-row {
+  background-color: #eaeaea;
+}
+
+.form-container {
+  flex: 1;
+  max-width: 500px;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 300px;
+}
+
+.input-style {
+  padding: 5px 10px;
+  border: 2px solid black;
+  border-radius: 2px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.add-btn {
+  width: fit-content;
+}
