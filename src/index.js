@@ -7,7 +7,6 @@ const showNotification = (message) => {
 
   document.body.appendChild(notificationContainer);
 
-  
   setTimeout(() => {
     notificationContainer.remove();
   }, 3000);
@@ -35,7 +34,7 @@ const saveScore = async (gameId, userName, userScore) => {
   return data.result;
 };
 
-const customGameId = 'GameByLuis'; 
+const customGameId = 'GameByLuis';
 
 document.getElementById('refresh-btn').addEventListener('click', async () => {
   const scores = await getScores(customGameId);
