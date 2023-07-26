@@ -1,5 +1,18 @@
 import './index.css';
 
+const showNotification = (message) => {
+  const notificationContainer = document.createElement('div');
+  notificationContainer.classList.add('notification');
+  notificationContainer.textContent = message;
+
+  document.body.appendChild(notificationContainer);
+
+  
+  setTimeout(() => {
+    notificationContainer.remove();
+  }, 3000);
+};
+
 const getScores = async (gameId) => {
   const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores/`);
   const data = await response.json();
@@ -54,12 +67,12 @@ document.getElementById('add-form').addEventListener('submit', async (event) => 
   const userScore = parseInt(scoreInput.value, 10);
 
   if (Number.isNaN(userScore) || userScore <= 0) {
-    alert('Please enter a valid score.');
+    showNotification('Please enter a valid score.');
     return;
   }
 
   await saveScore(customGameId, userName, userScore);
   nameInput.value = '';
   scoreInput.value = '';
-  console.log('Score submitted successfully!'); 
+  showNotification('Score submitted successfully!');
 });
