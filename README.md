@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
-  <img src="./luis-logo.png" alt="logo" width="40%"  height="auto" />
+  <img src="./luis-logo.png" alt="logo" width="20%"  height="auto" />
   <br/>
   <h3><b>To Do List - Webpack</b></h3>
 </div>
