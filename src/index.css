@@ -1,10 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+form {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6f9fc;
 }
 
 .header-container {
@@ -13,9 +31,11 @@ body {
 }
 
 .web-title {
-  font-size: 50px;
-  font-weight: 600;
-  margin-left: -217px;
+  font-size: 60px;
+  font-weight: 700;
+  color: #3498db;
+  margin-top: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .main-section {
@@ -25,11 +45,15 @@ body {
   gap: 50px;
   max-width: 1000px;
   margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .board-container {
   flex: 1.5;
-  border: 3px solid black;
+  border: 3px solid #3498db;
   border-radius: 3px;
   padding: 10px;
 }
@@ -37,25 +61,30 @@ body {
 .board-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .subtitle {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
+  color: #444;
 }
 
 .button {
-  background-color: transparent;
-  border: 2px solid black;
-  padding: 5px 15px;
-  font-weight: 600;
-  transition: all 0.2s;
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.9);
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 700;
+  transition: background-color 0.2s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #efefef;
+  background-color: #48a6ef;
+  transform: translateY(-2px);
 }
 
 .scores {
@@ -64,16 +93,17 @@ body {
 
 .scores-row {
   padding: 5px 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #dcdcdc;
 }
 
 .row-description {
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
+  color: #333;
 }
 
 .odd-row {
-  background-color: #eaeaea;
+  background-color: #f7f7f7;
 }
 
 .form-container {
@@ -90,13 +120,27 @@ body {
 }
 
 .input-style {
-  padding: 5px 10px;
-  border: 2px solid black;
+  padding: 10px;
+  border: 2px solid #3498db;
   border-radius: 2px;
   width: 100%;
   max-width: 250px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .add-btn {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 700;
+  transition: background-color 0.2s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
   width: fit-content;
+}
+
+.add-btn:hover {
+  background-color: #48a6ef;
+  transform: translateY(-2px);
 }
